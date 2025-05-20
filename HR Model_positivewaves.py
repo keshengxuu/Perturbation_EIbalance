@@ -281,8 +281,11 @@ for i, matrix in enumerate(spikes_All):
     
     plt.xlabel('Times [ms]')
     plt.ylabel('Neuron index')
-plt.show()
 
+plt.xlim([0,5000])
+plt.ylim([0,1000])
+plt.tight_layout()
+plt.show()
 plt.savefig('positive_square_wave.png',dpi =300)
 
 # firing rate
